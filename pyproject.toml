@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "njacobs-zz-qdrift"
+version = "0.1.0"
+description = "通过字符级与结构级特征识别评测的题目难度漂移的痕迹，给出密度与命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "njacobs-zz" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://njacobs-zz.github.io"
+Repository = "https://github.com/njacobs-zz/qdrift"
+Issues = "https://github.com/njacobs-zz/qdrift/issues"
+
+[project.scripts]
+qdrift = "qdrift:main"
+
+[tool.setuptools]
+py-modules = ["qdrift"]
